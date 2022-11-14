@@ -93,4 +93,4 @@ class ViewController: BaseViewController {
 | vc              | UIViewController | It's necessary for swipe gesture and navigation bar actions.        | ✅          |
 | customView      | UIView           | Your design, showing inside the side menu.                          | ✅          |
 | position        | MenuPosition     | Side menu position. `.left` or `.right`. The default value is `.left`. | ❌          |
-| backgroundColor | UIColor          | Side menu background color. Default value is `.clear`.                 | ❌          |
+| backgroundColor | UIColor          | Side menu background color. Default value is `.darkGray.withAlphaComponent(0.7)`.                 | ❌          |
