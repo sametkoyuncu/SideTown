@@ -83,7 +83,7 @@ class ViewController: BaseViewController {
 }
 ```
 - Run project
-- For more information check out sample project 👉
+- For more information checkout sample project 👉 [Go](https://github.com/sametkoyuncu/SideTownDemoProject)
 
 ## Configuration
 
