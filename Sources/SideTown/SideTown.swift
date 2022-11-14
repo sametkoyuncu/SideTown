@@ -7,7 +7,7 @@
 #if canImport(UIKit)
 import UIKit
 
-final class SideMenu: UIView {
+final public class SideMenu: UIView {
     // for configurations
     // TODO: delegate may be use a protocol
     weak var delegate: UIViewController?

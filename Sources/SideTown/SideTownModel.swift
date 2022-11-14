@@ -6,22 +6,22 @@
 //
 import UIKit
 
-enum MenuState {
+public enum MenuState {
     case opened
     case closed
 }
 
-enum MenuPosition {
+public enum MenuPosition {
     case left
     case right
 }
 
-enum NavBarStatus {
+public enum NavBarStatus {
     case show
     case hide
 }
 
-struct MenuConfig {
+public struct MenuConfig {
     var vc: UIViewController
     var customView: UIView
     var position: MenuPosition = .left
