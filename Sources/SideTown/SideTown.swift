@@ -25,7 +25,7 @@ final public class SideMenu: UIView {
         super.init(coder: aDecoder)
     }
     
-    init(_ menuConfig: MenuConfig) {
+    public init(_ menuConfig: MenuConfig) {
         // get view width and x position
         let width = menuConfig.customView.frame.width
         let x = menuConfig.position == .left ? -(width + 5) : menuConfig.vc.view.frame.width + 5
