@@ -43,6 +43,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: - Your Menu View
         // custom menu view inside side menu
         let menuView = UIView(frame: CGRect(x: 0,
                                               y: 0,
