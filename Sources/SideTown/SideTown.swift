@@ -58,7 +58,7 @@ final public class SideMenu: UIView {
     }
 }
 
-extension SideMenu {
+public extension SideMenu {
     // MARK: - Open or close side menu. | You can call this methods from anywhere if you need.
     func toggleMenu() {
         switch menuState {
