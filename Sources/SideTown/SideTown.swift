@@ -75,7 +75,7 @@ public extension SideMenu {
         menuState = .opened
         // bg
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            UIView.animate(withDuration: 0.3,
+            UIView.animate(withDuration: 0.6,
                            delay: 0,
                            usingSpringWithDamping: 0.8,
                            initialSpringVelocity: 0,
@@ -118,7 +118,7 @@ private extension SideMenu {
     }
     // MARK: - menu animations
     func updateMenuOriginX(for status: MenuState) {
-        UIView.animate(withDuration: 0.3,
+        UIView.animate(withDuration: 0.6,
                        delay: 0,
                        usingSpringWithDamping: 0.8,
                        initialSpringVelocity: 0,
@@ -147,7 +147,7 @@ private extension SideMenu {
     func changeNavBarStatus(to status: NavBarStatus) {
         switch status {
         case .show:
-            UIView.animate(withDuration: 0.3,
+            UIView.animate(withDuration: 0.6,
                            delay: 0,
                            usingSpringWithDamping: 0.8,
                            initialSpringVelocity: 0,
