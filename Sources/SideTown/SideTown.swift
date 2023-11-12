@@ -75,7 +75,7 @@ public extension SideMenu {
         menuState = .opened
         // bg
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            UIView.animate(withDuration: 0.6,
+            UIView.animate(withDuration: 0.3,
                            delay: 0,
                            usingSpringWithDamping: 0.8,
                            initialSpringVelocity: 0,
