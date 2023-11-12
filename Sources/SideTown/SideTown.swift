@@ -75,9 +75,9 @@ public extension SideMenu {
         menuState = .opened
         // bg
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            UIView.animate(withDuration: 0.8,
+            UIView.animate(withDuration: 0.5,
                            delay: 0,
-                           usingSpringWithDamping: 0.8,
+                           usingSpringWithDamping: 0.5,
                            initialSpringVelocity: 0,
                            options: .curveEaseInOut) { [weak self] in
                 
@@ -93,7 +93,7 @@ public extension SideMenu {
         // bg
         UIView.animate(withDuration: 0.3,
                        delay: 0,
-                       usingSpringWithDamping: 0.8,
+                       usingSpringWithDamping: 0.5,
                        initialSpringVelocity: 0,
                        options: .curveEaseInOut) { [weak self] in
             self?.backgroundColor = .clear
@@ -118,9 +118,9 @@ private extension SideMenu {
     }
     // MARK: - menu animations
     func updateMenuOriginX(for status: MenuState) {
-        UIView.animate(withDuration: 0.8,
+        UIView.animate(withDuration: 0.5,
                        delay: 0,
-                       usingSpringWithDamping: 0.8,
+                       usingSpringWithDamping: 0.5,
                        initialSpringVelocity: 0,
                        options: .curveEaseInOut) { [weak self] in
             guard let self = self else { return }
@@ -147,18 +147,18 @@ private extension SideMenu {
     func changeNavBarStatus(to status: NavBarStatus) {
         switch status {
         case .show:
-            UIView.animate(withDuration: 0.8,
+            UIView.animate(withDuration: 0.5,
                            delay: 0,
-                           usingSpringWithDamping: 0.8,
+                           usingSpringWithDamping: 0.5,
                            initialSpringVelocity: 0,
                            options: .curveEaseInOut) { [weak self] in
                 self?.delegate?.navigationController?.navigationBar.transform = CGAffineTransform(translationX: 0, y: 0)
                 self?.backgroundColor = self?.menuBackgroundColor
             }
         case .hide:
-            UIView.animate(withDuration: 0.8,
+            UIView.animate(withDuration: 0.5,
                            delay: 0,
-                           usingSpringWithDamping: 0.8,
+                           usingSpringWithDamping: 0.5,
                            initialSpringVelocity: 0,
                            options: .curveEaseInOut) { [weak self] in
                 self?.delegate?.navigationController?.navigationBar.transform = CGAffineTransform(translationX: 0, y: -200)
